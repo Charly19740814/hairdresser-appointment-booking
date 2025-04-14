@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Csillam Hair Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-header">
+        
+        <div class="menu-container">
+            <button class="menu-toggle">☰ Menu</button>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Team</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1>Admin Panel</h1>
+
+    <div class="admin-container">
+        <h2>Add or Edit Hairdresser</h2>
+        <form id="admin-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" name="image" required>
+
+            <button type="submit">Save</button>
+        </form>
+
+        <h3>Current Hairdressers</h3>
+        <ul id="hairdresser-list">
+            <!-- Current hairdressers will be listed here -->
+        </ul>
+    </div>
+
+    <script src="textbox.js"></script>
+</body>
+</html>

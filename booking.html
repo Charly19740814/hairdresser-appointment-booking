@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Foglalás</title>
+</head>
+<body>
+    <div class="booking-container">
+        <h1>Foglalás - Kérjük, adja meg adatait!</h1>
+        
+        <form id="booking-form" class="form-container">
+            <div class="form-group">
+                <label for="name">Név:</label>
+                <input type="text" id="name" placeholder="Adja meg a nevét" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefonszám:</label>
+                <input type="text" id="phone" placeholder="Adja meg a telefonszámát" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email cím:</label>
+                <input type="email" id="email" placeholder="Adja meg az email címét" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Szolgáltatás:</label>
+                <select id="service" required>
+                    <option value="hajvagas">Hajvágás</option>
+                    <option value="hajfestes">Hajfestés</option>
+                    <option value="borotvalas">Borotválás</option>
+                    <option value="szakall igazitas">Szakáll igazítás</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="appointment-time">Időpont:</label>
+                <input type="text" id="appointment-time" name="appointment-time" readonly> 
+            </div>
+
+            <button type="submit" class="submit-btn">Foglalás megerősítése</button>
+        </form>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
+
